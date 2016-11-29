@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Product Card Display</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <script src="js/libs/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.5.8/angular-sanitize.min.js"></script>
+
+    <!-- Custom Google Web Font -->
+    <link href='http://fonts.googleapis.com/css?family=Cousine:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300italic,300,400italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,800,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/fancySelect.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="./js/libs/html5shiv.js"></script>
+    <script src="./js/libs/respond.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <product-display-app></product-display-app>
+
+    <script src="js/app.js"></script>
+    <script src="js/productCard.controller.js"></script>
+    <script src="js/productCard.directive.js"></script>
+    <script src="js/productCard.service.js"></script>
+    <script src="js/productCardAutofocus.directive.js"></script>
+  </body>
+</html>

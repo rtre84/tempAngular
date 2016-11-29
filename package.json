@@ -9,12 +9,8 @@
   ],
   "homepage": "https://github.com/daniellmb/angular-test-patterns",
   "author": "Daniel Lamb (http://daniellmb.com)",
-  "maintainers": [
-    
-  ],
-  "contributors": [
-
-  ],
+  "maintainers": [],
+  "contributors": [],
   "bugs": {
     "url": "https://github.com/daniellmb/angular-test-patterns/issues"
   },
@@ -30,11 +26,12 @@
   },
   "devDependencies": {
     "coffee-script": "latest",
-    "jasmine-node": "latest",
-    "esprima": "latest",
     "coffeelint": "latest",
+    "esprima": "latest",
+    "grunt-cli": "latest",
+    "jasmine-node": "latest",
     "jshint": "latest",
-    "grunt-cli": "latest"
+    "karma": "^1.3.0"
   },
   "scripts": {
     "test": "npm run testRules && npm run testPatterns && npm run testExamples",
