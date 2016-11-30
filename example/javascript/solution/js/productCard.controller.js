@@ -1,9 +1,9 @@
-function TodoController(TodoService) {
+function ProductCardController(ProductCardService) {
   var ctrl = this;
   ctrl.newTodo = '';
   ctrl.list = [];
-  function getTodos() {
-    TodoService
+  function getProductCards() {
+    ProductCardService
       .retrieve()
       .then(function (response) {
         console.log(response);
@@ -17,7 +17,7 @@ function TodoController(TodoService) {
     });
   };
   ctrl.toggleState = function (item) {
-    TodoService
+    ProductCardService
       .update(item)
       .then(function () {
 
@@ -25,9 +25,9 @@ function TodoController(TodoService) {
         item.completed = !item.completed;
       });
   };
-  getTodos();
+  getProductCards();
 }
 
 angular
   .module('app')
-  .controller('TodoController', TodoController);
+  .controller('ProductCardController', ProductCardController);

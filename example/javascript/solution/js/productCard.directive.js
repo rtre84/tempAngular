@@ -1,18 +1,17 @@
 function productDisplayApp() {
   return {
     restrict: 'E',
-    controller: 'TodoController as todo',
+    controller: 'ProductCardController as prodCard',
     template: `
     
-      <div class="container-fluid">
-			 <div class="row">
-			 <!--<div id="columns">-->
+      <div class="container wrapper">
+			 <div id="columns">
 				<div class="col-md-20">
 		
         <ul class="">
-          <li ng-repeat="item in todo.list">
+          <li ng-repeat="item in prodCard.list">
             
-            <div class="inner-content col-lg-5">
+            <div class="inner-content col-lg-6 pin">
               <img class="img-responsive" ng-src="{{ item.backgroundImage }}" />
               <div class="col-xs-12">
                     <p class="text-center" ng-style="{{ item.topDescription_myStyle }}">{{ item.topDescription | filter:uppercase }}</p>
@@ -39,11 +38,16 @@ function productDisplayApp() {
             
           </li>
         </ul>
-        </div>
-       <!--</div>-->
+       </div>
        </div>
       </div>  
-    `
+      
+    `,
+    link: function(scope, elem, attrs) {
+      console.log(scope);
+      console.log(elem);
+      console.log(attrs);
+    }
   };
 }
 

@@ -34,7 +34,7 @@ describe 'Directive: myDir2', ->
 
   beforeEach ->
     # Load the directive's module
-    module 'myApp'
+    module 'app'
 
     # Reset data each time
     defaultData = 42
@@ -86,7 +86,7 @@ describe('Directive: myDir2', function () {
   beforeEach(function () {
 
     // Load the directive's module
-    module('myApp');
+    module('app');
     
     // Reset data each time
     defaultData = 42;

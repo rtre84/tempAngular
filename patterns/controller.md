@@ -27,17 +27,17 @@
 ####Suggested Controller Unit Test Setup [&#8593;](#testing-patterns)
 ```CoffeeScript
 # CoffeeScript
-describe 'Controller: myCtrl', ->
+describe 'Controller: ProductCardController', ->
   myCtrl = scope = mySvc = null
   
   # Initialize the controller and scope
   beforeEach ->
     # Load the controller's module
-    module 'myApp'
+    module 'app'
   
     # Provide any mocks needed
     module ($provide) ->
-      $provide.value 'mySvc', new MockMySvc()
+      $provide.value 'ProductCardService', new MockMySvc()
       # Make sure CoffeeScript doesn't return anything
       null
 
@@ -46,7 +46,7 @@ describe 'Controller: myCtrl', ->
     inject ($controller, _mySvc_) ->
       scope = {}
       mySvc = _mySvc_
-      myCtrl = $controller 'myCtrl',
+      myCtrl = $controller 'ProductCardController',
         $scope: scope
     
   it 'should exist', ->
@@ -61,17 +61,17 @@ describe 'Controller: myCtrl', ->
 
 ```JavaScript
 // JavaScript
-describe('Controller: myCtrl', function () {
+describe('Controller: ProductCardController', function () {
   var myCtrl, scope, mySvc;
 
   // Initialize the controller and scope
   beforeEach(function () {
     // Load the controller's module
-    module('myApp');
+    module('app');
 
     // Provide any mocks needed
     module(function ($provide) {
-      $provide.value('mySvc', new MockMySvc());
+      $provide.value('ProductCardService', new MockMySvc());
     });
 
     // Inject in angular constructs otherwise,
@@ -79,7 +79,7 @@ describe('Controller: myCtrl', function () {
     inject(function ($controller, _mySvc_) {
       scope = {};
       mySvc = _mySvc_;
-      myCtrl = $controller('myCtrl', {
+      myCtrl = $controller('ProductCardController', {
         $scope: scope
       });
     });

@@ -18,7 +18,7 @@ describe 'Service: myFltr', ->
 
   beforeEach ->
     # Load the filters's module
-    module 'myApp'
+    module 'app'
     
     # Provide any mocks needed
     module ($provide) ->
@@ -45,7 +45,7 @@ describe('Filter: myFltr', function () {
 
   beforeEach(function () {
     // Load the filters's module
-    module('myApp');
+    module('app');
 
     // Provide any mocks needed
     module(function ($provide) {

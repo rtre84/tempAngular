@@ -6,10 +6,10 @@ module.exports = function (config) {
     // list of files / patterns to load in the browser
     files: [
       // app deps
-      '../bower_components/angular/angular.js',
-      '../bower_components/angular-route/angular-route.js',
-      '../bower_components/angular-mocks/angular-mocks.js',
-      '../bower_components/angular-sanitize/angular-sanitize.js',
+      'bower_components/angular/angular.js',
+      'bower_components/angular-route/angular-route.js',
+      'bower_components/angular-mocks/angular-mocks.js',
+      'bower_components/angular-sanitize/angular-sanitize.js',
       //mock data
       '../../spec/mockData.js',
       // app code
@@ -31,8 +31,8 @@ module.exports = function (config) {
     // configure coverage reporter
     coverageReporter: {
       // change to html if you need details
-      //type: 'html',
-      type: 'text-summary',
+      type: 'html',
+      // type: 'text-summary',
       dir: 'coverage'
     },
 
@@ -43,7 +43,7 @@ module.exports = function (config) {
     logLevel: config.LOG_DISABLE,
 
     // Test in these browsers
-    browsers: ['PhantomJS'],
+    browsers: ['Chrome'], //, 'PhantomJS'],
 
     // Continuous Integration mode
     singleRun: true

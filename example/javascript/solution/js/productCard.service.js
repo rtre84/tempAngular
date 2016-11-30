@@ -1,4 +1,4 @@
-function TodoService($http, $sce) {
+function ProductCardService($http, $sce) {
 
   var API = 'https://www.abercrombie.com/anf/nativeapp/qa/codetest/codeTest_exploreData.json';
 
@@ -34,4 +34,4 @@ function TodoService($http, $sce) {
 
 angular
   .module('app')
-  .factory('TodoService', TodoService);
+  .factory('ProductCardService', ProductCardService);
