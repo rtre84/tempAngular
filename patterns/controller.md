@@ -33,11 +33,11 @@ describe 'Controller: ProductCardController', ->
   # Initialize the controller and scope
   beforeEach ->
     # Load the controller's module
-    module 'app'
+    module 'myApp'
   
     # Provide any mocks needed
     module ($provide) ->
-      $provide.value 'ProductCardService', new MockMySvc()
+      $provide.value 'mySvc', new MockMySvc()
       # Make sure CoffeeScript doesn't return anything
       null
 
@@ -46,7 +46,7 @@ describe 'Controller: ProductCardController', ->
     inject ($controller, _mySvc_) ->
       scope = {}
       mySvc = _mySvc_
-      myCtrl = $controller 'ProductCardController',
+      myCtrl = $controller 'myCtrl',
         $scope: scope
     
   it 'should exist', ->
@@ -67,11 +67,11 @@ describe('Controller: ProductCardController', function () {
   // Initialize the controller and scope
   beforeEach(function () {
     // Load the controller's module
-    module('app');
+    module('myApp');
 
     // Provide any mocks needed
     module(function ($provide) {
-      $provide.value('ProductCardService', new MockMySvc());
+      $provide.value('mySvc', new MockMySvc());
     });
 
     // Inject in angular constructs otherwise,
@@ -79,7 +79,7 @@ describe('Controller: ProductCardController', function () {
     inject(function ($controller, _mySvc_) {
       scope = {};
       mySvc = _mySvc_;
-      myCtrl = $controller('ProductCardController', {
+      myCtrl = $controller('myCtrl', {
         $scope: scope
       });
     });

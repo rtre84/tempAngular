@@ -1,5 +1,5 @@
 /**
-Example AngularJS Application
+Example Test AngularJS Application
 =============================
 
 Please Note: that this example is configured into a single file to be succinct... not maintainable.

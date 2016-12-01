@@ -1,5 +1,6 @@
 module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
+  grunt.loadNpmTasks('grunt-serve');
   grunt.initConfig({
     jshint: {
       //list of source files to analyze
@@ -36,9 +37,9 @@ module.exports = function (grunt) {
       }
     },
     karma: {
-      coffee: {
-        configFile: 'coffeescript/karma.conf.coffee'
-      },
+      // coffee: {
+        // configFile: 'coffeescript/karma.conf.coffee'
+      // },
       javascript: {
         configFile: 'javascript/karma.conf.js'
       }

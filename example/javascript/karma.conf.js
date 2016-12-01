@@ -13,7 +13,8 @@ module.exports = function (config) {
       //mock data
       '../../spec/mockData.js',
       // app code
-      'solution/js/app.js',
+      // 'solution/js/app.js',
+      'app_example.js',
       // mocks
       'mock.js',
       // generated specs to run
